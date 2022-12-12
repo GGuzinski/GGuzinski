@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Choinka</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <label for="wysokosc_choinki">Podaj wielkość choinki<input type="number" id="wysokosc_choinki"></label>
+    <button id="przycisk">zbuduj</button>
+    <script>
+    let i,j;
+ const btnchoinka=przycisk;
+ 
+
+ function choinka(){
+    const wielkosc_choinki=wysokosc_choinki.value;
+
+for(let wysokosc=0;wysokosc<wielkosc_choinki;wysokosc++)
+{
+for(j=wielkosc_choinki-wysokosc;j>0;j--) 
+{
+document.write("&nbsp;");
+}
+for(i=0;i<=wysokosc;i++) 
+{
+document.write("*");
+}
+document.writeln("<br>");
+} 
+document.write("pień");
+}
+btnchoinka.addEventListener('click', choinka);
+document.write("pień");
+    </script>
+   
+</body>
+</html>
